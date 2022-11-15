@@ -1,0 +1,37 @@
+/* Made by r58playz and his aboutbrowser edited by MotorTruck1221 */
+.navbarUrl {
+    height: 4em;
+    width: 561px;
+    background-color: #E1F4F3;
+    color: #333333;
+    font-size: 15px;
+    font-weight: 700;
+    border-radius: 10px;
+}
+
+#content {
+    text-align: center;
+    /* Vertical centering of text */
+    display: flex;
+    margin-top: 35vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+* {
+    overflow: hidden;
+}
+
+.footerRight {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+}
+.footerLeft {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+}

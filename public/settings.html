@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>about:blank</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="settings.css">
+    <script src="settings.js" defer></script>
+    <script src="/browser-api-tab.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script> -->
+    <link rel="stylesheet" href="particles.css"></link>
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="particles.js" defer></script>
+</head>
+
+<body onload="init();">
+    <div id="particles-js"></div>
+    <h1 class="name">Natant Browser Settings</h1>
+    <div>
+        <settings class="container">
+            <setting id="startUrl" class="settings-div">
+                <settingTitle>
+                    <div>
+                        <div class="pleasecenter">Start URL: </div>
+                    </div> <input type="text">
+                </settingTitle>
+                Start URL used when creating a new tab.
+                <settingStatus></settingStatus>
+                <hr>
+            </setting>
+            <setting id="searchEngineUrl" class="settings-div">
+                <settingTitle>
+                    <div>
+                        <div class="pleasecenter">Search Engine URL: </div>
+                    </div> <input type="text">
+                </settingTitle>
+                Search Engine URL used when searching.
+                <settingStatus></settingStatus>
+                <hr>
+            </setting>
+            <setting id="proxy" class="settings-div">
+                <settingTitle>
+                    <div>
+                        <div class="pleasecenter">Proxy: </div>
+                    </div>
+                    <select name="Proxy" id="proxyselector" class="select-proxy">
+                        <option value="DIP">Dynamic Interception Proxy</option>
+                        <option value="UV">Ultraviolet</option>
+                    </select>
+                </settingTitle>
+                Proxy used to proxy URLs.
+                <settingStatus></settingStatus>
+                <hr>
+            </setting>
+            <setting id="resetSettings" class="settings-div">
+                <settingTitle>
+                    <button onclick="resetAllSettings();">RESET ALL SETTINGS</button>
+                </settingTitle>
+                RESET ALL settings to defaults.
+                <hr>
+            </setting>
+        </settings>
+    </div>
+</body>
+
+</html>
