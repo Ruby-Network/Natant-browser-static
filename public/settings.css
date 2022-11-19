@@ -96,7 +96,7 @@ button {
   flex-direction: row;
   justify-content: center;
   background-color: #706C61;
-  box-shadow: 6px 6px 2px #E1F4F3 inset;
+  box-shadow: 6px 6px 6px 6px 2px #E1F4F3 inset;
 }
 
 /* The switch - the box around the slider */
