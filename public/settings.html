@@ -13,10 +13,23 @@
     <link rel="stylesheet" href="particles.css"></link>
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="particles.js" defer></script>
+    <!-- <script src="./js/three.js" type="module" defer></script>
+    <script type="importmap">
+        {
+            "imports": {
+                "three-bad": "https://unpkg.com/three/build/three.min.js",
+                "three": "https://unpkg.com/three/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@latest/examples/jsm/"
+            }
+        }
+    </script> -->
 </head>
 
 <body onload="init();">
-    <div id="particles-js"></div>
+    <div id="canvas">
+        <div id="particles-js"></div>
+    </div>
+
     <h1 class="name">Natant Browser Settings</h1>
     <div>
         <settings class="container">
